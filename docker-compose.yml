@@ -1,4 +1,4 @@
-version: "3"
+version: "3.4"
 
 services:
   postgres:
@@ -15,7 +15,7 @@ services:
       args:
         - cachet_ver=master
     ports:
-      - 80:8000
+      - 7999:8000
     links:
       - postgres:postgres
     environment:
